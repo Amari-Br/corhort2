@@ -5,84 +5,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <style type="text/css">
+      /*     Syntax for Internal CSS
+          Learn more: https://www.w3schools.com/html/html_css.asp */
+          body {
+            font-size: 1em;
+            margin: 0;
+            background-color: #90CBFB;
+            position: relative;
+            color: #444;
+          }
+
+          header {
+            position: absolute;
+            width: 100%;
+          }
+
+          ul {
+            background-color: #FFD432;
+            list-style: none;
+            margin: 0;
+            padding: 2%;
+            text-align: center;
+          }
+          ul li {
+            display: inline;
+            margin-right: 1em;
+          }
+         ul li a {
+            color: lightblue;
+            text-decoration: underline;
+          }
+      ul li a:hover {
+        color: black;
+      }
+       .hero {
+        background-image: url("https://cdn.glitch.com/bc2980dc-21e3-43fc-8c6c-5e88354fe0de%2Fchromebook-article.png?v=1581700827939");
+         background-size: cover; 
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+      course-information {
+        font-size: 10px; color: black;
+      }
+      .hero p {
+      line-height: normal
+      }
+      .hero p {
+        margin: 0;
+        padding-top: 40vh;
+        text-transform: uppercase;
+        display: block;
+        color: yellow;
+        font-size: 10vw;
+      }
+       .course-information {
+        padding: 0 10%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .apply-btn {
+        border: 3px solid #FFD432;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 1em;
+        display: inline-block;
+        border-radius: 10px;
+        font-size: 2em;
+      }
+
+          div {
+            background-image: url("https://cdn.glitch.com/bc2980dc-21e3-43fc-8c6c-5e88354fe0de%2Fchromebook-article.png?v=1581700827939");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center;
+            height: 100vh;
+          }
+          p {
+            margin: 0;
+            padding-top: 40vh;
+            text-transform: uppercase;
+            display: block;
+            color: black;
+            font-size: 10vw; text-align: center;
+          }
+          div {
+            padding: 0 10%;
+          }
+          h2 {
+            color: #110066;
+            font-weight: 400;
+            font-size: 1.75em;
+          }
+
+          }
+          a {
+            border: 3px solid #FFD432;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1em;
+            display: inline-block;
+            border-radius: 10px;
+            font-size: 2em;
+          }
+
+          footer {
+            text-align: center;
+          }
+    </style>
   </head>
-  <style type="text/css">
-/*     Syntax for Internal CSS
-    Learn more: https://www.w3schools.com/html/html_css.asp */
-    body {
-      font-size: 1em;
-      margin: 0;
-      background-color: #90CBFB;
-      position: relative;
-      color: #444;
-    }
-
-    header {
-      position: absolute;
-      width: 100%;
-    }
-
-    ul {
-      background-color: #FFD432;
-      list-style: none;
-      margin: 0;
-      padding: 2%;
-      text-align: center;
-    }
-    ul li {
-      display: inline;
-      margin-right: 1em;
-    }
-    a {
-      color: lightblue;
-      text-decoration: underline;
-    }
-
-    div {
-      background-image: url("https://cdn.glitch.com/bc2980dc-21e3-43fc-8c6c-5e88354fe0de%2Fchromebook-article.png?v=1581700827939");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      text-align: center;
-      height: 100vh;
-    }
-    p {
-      margin: 0;
-      padding-top: 40vh;
-      text-transform: uppercase;
-      display: block;
-      color: yellow;
-      font-size: 10vw;
-    }
-    div {
-      padding: 0 10%;
-    }
-    h2 {
-      color: #110066;
-      font-weight: 400;
-      font-size: 1.75em;
-    }
-
-    p {
-      text-align: center;
-    }
-    a {
-      border: 3px solid #FFD432;
-      color: #FFFFFF;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 1em;
-      display: inline-block;
-      border-radius: 10px;
-      font-size: 2em;
-    }
-
-    footer {
-      text-align: center;
-    }
-  </style>
   <body>
-<!--     Using HTML5 element tags
+    <!--     Using HTML5 element tags
     Learn more: https://www.w3schools.com/html/html5_semantic_elements.asp -->
 
     <!--     Keep the style attribute and vaules above -->
@@ -118,7 +157,10 @@
       </nav>
     </header>
     <main>
-      <div>
+      <div style="" class="hero">
+        <p>Welcome to Youth Coding</p>
+      </div>
+      <div style="" class="course-information">
         <p>
           In this 6-week course, which is offered
           <strong>Tuesday through Thursday</strong> from
@@ -158,13 +200,14 @@
             >Alonsok@courtinnovation.org</a
           >
         </p>
-        <p style="">
-            <a
-              style=""
-              href="https://www.stnicholashouses.org/"
-              target="_blank"
-              >Apply Now!</a
-            >
+        <p style="" class="text-center">
+          <a
+            style=""
+            class="apply-btn"
+            href="https://www.stnicholashouses.org/"
+            target="_blank"
+            >Apply Now!</a
+          >
         </p>
       </div>
     </main>
